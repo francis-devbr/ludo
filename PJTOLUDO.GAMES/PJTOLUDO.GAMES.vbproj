@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{CE76E619-4BA9-4EA8-8707-B8AE54827841}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PJTOLUDO.GAMES</RootNamespace>
+    <AssemblyName>PJTOLUDO.GAMES</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>PJTOLUDO.GAMES.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>PJTOLUDO.GAMES.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.60919.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Boleto.Net">
+      <HintPath>..\packages\Boleto.Net.2.0.0\lib\Boleto.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Theme\css\layoutPrincipal.css" />
+    <Content Include="App_Themes\Theme\css\MenuHorizontal.css" />
+    <Content Include="App_Themes\Theme\css\Personalizado.css" />
+    <Content Include="App_Themes\Theme\css\skitter.styles.css" />
+    <Content Include="App_Themes\Theme\css\styletab.css" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_3DS_234101142.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_3DS_3043322.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_3DS_364101111.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_Playstation 3_1017752.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_Playstation 3_1218855.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_Playstation 3_1519952.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_Playstation 3_191810415.jpg" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_Playstation 3_2716651.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_Playstation 3_3053322.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_Playstation 3_31681041.jpg" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_Playstation 3_3614422.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_Playstation 3_4212259.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_PS Vita_3171151.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_PSP_3053322.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_Wii U_1211112.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_Wii_272101122.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_Wii_3261011416.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_Xbox 360_1026651.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_Xbox 360_1027752.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_Xbox 360_13222514.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_Xbox 360_1519952.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_Xbox 360_2726658.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_Xbox 360_2861112412.jpg" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_Xbox 360_292111241.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_Xbox 360_3053322.png" />
+    <Content Include="App_Themes\Theme\img\iconeCover\capa_Xbox 360_3121112415.png" />
+    <Content Include="App_Themes\Theme\img\iconeESRB\ESRB_Adults_Only_18+.png" />
+    <Content Include="App_Themes\Theme\img\iconeESRB\ESRB_Early_Childhood.png" />
+    <Content Include="App_Themes\Theme\img\iconeESRB\ESRB_Everyone.png" />
+    <Content Include="App_Themes\Theme\img\iconeESRB\ESRB_Everyone_10+.png" />
+    <Content Include="App_Themes\Theme\img\iconeESRB\ESRB_Mature_17+.png" />
+    <Content Include="App_Themes\Theme\img\iconeESRB\ESRB_RP.png" />
+    <Content Include="App_Themes\Theme\img\iconeESRB\ESRB_Teen.png" />
+    <Content Include="App_Themes\Theme\img\iconeMidia\bluray_disc_logo-300x201.png" />
+    <Content Include="App_Themes\Theme\img\iconeMidia\CDROM_System.png" />
+    <Content Include="App_Themes\Theme\img\iconeMidia\DVD.png" />
+    <Content Include="App_Themes\Theme\img\iconeMidia\Umd Red.png" />
+    <Content Include="App_Themes\Theme\img\iconePlataforma\commodore-64-1336524452.png" />
+    <Content Include="App_Themes\Theme\img\iconePlataforma\icon_3ds.gif" />
+    <Content Include="App_Themes\Theme\img\iconePlataforma\icon_ds.gif" />
+    <Content Include="App_Themes\Theme\img\iconePlataforma\icon_PC.gif" />
+    <Content Include="App_Themes\Theme\img\iconePlataforma\icon_ps3.gif" />
+    <Content Include="App_Themes\Theme\img\iconePlataforma\icon_PS_Vita.gif" />
+    <Content Include="App_Themes\Theme\img\iconePlataforma\icon_Wii.gif" />
+    <Content Include="App_Themes\Theme\img\iconePlataforma\icon_Wii_U.gif" />
+    <Content Include="App_Themes\Theme\img\iconePlataforma\icon_Xbox_360.png" />
+    <Content Include="App_Themes\Theme\img\iconePlataforma\nintendo-3ds-1344286647.png" />
+    <Content Include="App_Themes\Theme\img\iconePlataforma\nintendo-wii-1336524734.png" />
+    <Content Include="App_Themes\Theme\img\iconePlataforma\nintendo-wii-u-1336524744.png" />
+    <Content Include="App_Themes\Theme\img\iconePlataforma\pc-1336524756.png" />
+    <Content Include="App_Themes\Theme\img\iconePlataforma\sony-playstation-3-1336524977.png" />
+    <Content Include="App_Themes\Theme\img\iconePlataforma\sony-playstation-vita-1336524991.png" />
+    <Content Include="App_Themes\Theme\img\iconePlataforma\sony-psp-1336525006.png" />
+    <Content Include="App_Themes\Theme\img\iconePublicador\2K_Sports.png" />
+    <Content Include="App_Themes\Theme\img\iconePublicador\Acclaim_entertainment.png" />
+    <Content Include="App_Themes\Theme\img\iconePublicador\Aksys_games_logo.png" />
+    <Content Include="App_Themes\Theme\img\iconePublicador\Bandai450128.png" />
+    <Content Include="App_Themes\Theme\img\iconePublicador\Bethesda_Softworks.png" />
+    <Content Include="App_Themes\Theme\img\iconePublicador\Disney_Interactive133_large.png" />
+    <Content Include="App_Themes\Theme\img\iconePublicador\Dreamgear_hotsite.jpg" />
+    <Content Include="App_Themes\Theme\img\iconePublicador\ea_logo.png" />
+    <Content Include="App_Themes\Theme\img\iconePublicador\insom_moon_bug_normal.png" />
+    <Content Include="App_Themes\Theme\img\iconePublicador\lucasarts.png" />
+    <Content Include="App_Themes\Theme\img\iconePublicador\microsoft-studios-stock-logo.png" />
+    <Content Include="App_Themes\Theme\img\iconePublicador\microsoft.png" />
+    <Content Include="App_Themes\Theme\img\iconePublicador\NintendoLogo.png" />
+    <Content Include="App_Themes\Theme\img\iconePublicador\Rockstar_Games_Logo.PNG" />
+    <Content Include="App_Themes\Theme\img\iconePublicador\sony_computer_entertainment_logo_091208.gif" />
+    <Content Include="App_Themes\Theme\img\iconePublicador\Team_Bondi_logo.png" />
+    <Content Include="App_Themes\Theme\img\iconePublicador\THQ.png" />
+    <Content Include="App_Themes\Theme\img\iconePublicador\Ubisoft.png" />
+    <Content Include="App_Themes\Theme\img\layout\arrow.png" />
+    <Content Include="App_Themes\Theme\img\layout\basket_add.png" />
+    <Content Include="App_Themes\Theme\img\layout\bg-login-2.gif" />
+    <Content Include="App_Themes\Theme\img\layout\bg-login.gif" />
+    <Content Include="App_Themes\Theme\img\layout\bg_black.png" />
+    <Content Include="App_Themes\Theme\img\layout\bg_convert.jpg" />
+    <Content Include="App_Themes\Theme\img\layout\bg_coupe.jpg" />
+    <Content Include="App_Themes\Theme\img\layout\bg_hdr.png" />
+    <Content Include="App_Themes\Theme\img\layout\bg_packshot-pdp.png" />
+    <Content Include="App_Themes\Theme\img\layout\bg_packshot-productlist-blue.png" />
+    <Content Include="App_Themes\Theme\img\layout\bg_packshot-productlist.png" />
+    <Content Include="App_Themes\Theme\img\layout\bg_pickup.jpg" />
+    <Content Include="App_Themes\Theme\img\layout\bg_sedan.jpg" />
+    <Content Include="App_Themes\Theme\img\layout\bg_sports.jpg" />
+    <Content Include="App_Themes\Theme\img\layout\bg_sub.png" />
+    <Content Include="App_Themes\Theme\img\layout\bg_sub_left.png" />
+    <Content Include="App_Themes\Theme\img\layout\bg_suv.jpg" />
+    <Content Include="App_Themes\Theme\img\layout\bkg_dark.png" />
+    <Content Include="App_Themes\Theme\img\layout\bkg_input.png" />
+    <Content Include="App_Themes\Theme\img\layout\bkg_searchButton.png" />
+    <Content Include="App_Themes\Theme\img\layout\block-cart-header.gif" />
+    <Content Include="App_Themes\Theme\img\layout\BnAcessorio.png" />
+    <Content Include="App_Themes\Theme\img\layout\bnConsole.png" />
+    <Content Include="App_Themes\Theme\img\layout\bnGame.png" />
+    <Content Include="App_Themes\Theme\img\layout\btn-empty.png" />
+    <Content Include="App_Themes\Theme\img\layout\btn-search.gif" />
+    <Content Include="App_Themes\Theme\img\layout\btn-update.png" />
+    <Content Include="App_Themes\Theme\img\layout\bullet.png" />
+    <Content Include="App_Themes\Theme\img\layout\bullet_on.png" />
+    <Content Include="App_Themes\Theme\img\layout\button-bg.gif" />
+    <Content Include="App_Themes\Theme\img\layout\b_bg_packshot-pdp.jpg" />
+    <Content Include="App_Themes\Theme\img\layout\cart-delete.png" />
+    <Content Include="App_Themes\Theme\img\layout\corner.png" />
+    <Content Include="App_Themes\Theme\img\layout\corner_ps3.png" />
+    <Content Include="App_Themes\Theme\img\layout\corner_xbox360.png" />
+    <Content Include="App_Themes\Theme\img\layout\c_bg_packshot-productlist-blue.jpg" />
+    <Content Include="App_Themes\Theme\img\layout\edit.png" />
+    <Content Include="App_Themes\Theme\img\layout\footer-bg.gif" />
+    <Content Include="App_Themes\Theme\img\layout\footer-icon-1.png" />
+    <Content Include="App_Themes\Theme\img\layout\footer-icon-4.png" />
+    <Content Include="App_Themes\Theme\img\layout\gameTakeover.jpg" />
+    <Content Include="App_Themes\Theme\img\layout\header-bg.gif" />
+    <Content Include="App_Themes\Theme\img\layout\i_msg-error.gif" />
+    <Content Include="App_Themes\Theme\img\layout\i_msg-success.png" />
+    <Content Include="App_Themes\Theme\img\layout\list-icon.png" />
+    <Content Include="App_Themes\Theme\img\layout\logo.png" />
+    <Content Include="App_Themes\Theme\img\layout\main-container-bg.jpg" />
+    <Content Include="App_Themes\Theme\img\layout\main-container-bg.png" />
+    <Content Include="App_Themes\Theme\img\layout\marker-btn.png" />
+    <Content Include="App_Themes\Theme\img\layout\marker-login.png" />
+    <Content Include="App_Themes\Theme\img\layout\nav-bg.gif" />
+    <Content Include="App_Themes\Theme\img\layout\nav-border.gif" />
+    <Content Include="App_Themes\Theme\img\layout\next.png" />
+    <Content Include="App_Themes\Theme\img\layout\prev.png" />
+    <Content Include="App_Themes\Theme\img\layout\prodpage_icon_PS3.gif" />
+    <Content Include="App_Themes\Theme\img\layout\slider-bg.png" />
+    <Content Include="App_Themes\Theme\img\layout\submit-search.png" />
+    <Content Include="App_Themes\Theme\img\layout\tail-menu-act.gif" />
+    <Content Include="App_Themes\Theme\img\layout\toHitmanBG.jpg" />
+    <Content Include="App_Themes\Theme\img\layout\up-arrow.png" />
+    <Content Include="App_Themes\Theme\img\midia\0001.jpg" />
+    <Content Include="App_Themes\Theme\img\midia\0002.jpg" />
+    <Content Include="App_Themes\Theme\img\midia\0003.jpg" />
+    <Content Include="App_Themes\Theme\img\midia\0004.jpg" />
+    <Content Include="App_Themes\Theme\img\midia\0005.jpg" />
+    <Content Include="Cliente\CarrinhoCompra.aspx" />
+    <Content Include="Cliente\ConfirmaCompra.aspx" />
+    <Content Include="Cliente\ImprimeBoleto.aspx" />
+    <Content Include="Cliente\PainelC.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Livre\3DS.aspx" />
+    <Content Include="Livre\Busca.aspx" />
+    <Content Include="Livre\Detalhe.aspx" />
+    <Content Include="Livre\FaleConosco.aspx" />
+    <Content Include="Livre\index.aspx" />
+    <Content Include="Livre\login.aspx" />
+    <Content Include="Livre\NovoUsuario.aspx" />
+    <Content Include="Livre\PC.aspx" />
+    <Content Include="Livre\PlayStation 3.aspx" />
+    <Content Include="Livre\PS Vita.aspx" />
+    <Content Include="Livre\PSP.aspx" />
+    <Content Include="Livre\Wii U.aspx" />
+    <Content Include="Livre\Wii.aspx" />
+    <Content Include="Livre\Xbox 360.aspx" />
+    <Content Include="Scripts\accordion.js" />
+    <Content Include="Scripts\ds-sleight.js" />
+    <Content Include="Scripts\ie6.js" />
+    <Content Include="Scripts\jquery-1.8.1.min.js" />
+    <Content Include="Scripts\jquery.animate-colors-min.js" />
+    <Content Include="Scripts\jquery.cycle.min.js" />
+    <Content Include="Scripts\jquery.cycle.setup.js" />
+    <Content Include="Scripts\jquery.easing.1.3.js" />
+    <Content Include="Scripts\jquery.mousewheel.js" />
+    <Content Include="Scripts\jquery.skitter.min.js" />
+    <Content Include="Scripts\opcheckout.js" />
+    <Content Include="Scripts\scripts.js" />
+    <Content Include="Scripts\sliding.form.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cliente\ImprimeBoleto.aspx.designer.vb">
+      <DependentUpon>ImprimeBoleto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\ImprimeBoleto.aspx.vb">
+      <DependentUpon>ImprimeBoleto.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Livre\3DS.aspx.designer.vb">
+      <DependentUpon>3DS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Livre\3DS.aspx.vb">
+      <DependentUpon>3DS.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Livre\FaleConosco.aspx.designer.vb">
+      <DependentUpon>FaleConosco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Livre\FaleConosco.aspx.vb">
+      <DependentUpon>FaleConosco.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Livre\PC.aspx.designer.vb">
+      <DependentUpon>PC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Livre\PC.aspx.vb">
+      <DependentUpon>PC.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Livre\PS Vita.aspx.designer.vb">
+      <DependentUpon>PS Vita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Livre\PS Vita.aspx.vb">
+      <DependentUpon>PS Vita.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Livre\PSP.aspx.designer.vb">
+      <DependentUpon>PSP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Livre\PSP.aspx.vb">
+      <DependentUpon>PSP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Livre\Wii U.aspx.designer.vb">
+      <DependentUpon>Wii U.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Livre\Wii U.aspx.vb">
+      <DependentUpon>Wii U.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Livre\Wii.aspx.designer.vb">
+      <DependentUpon>Wii.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Livre\Wii.aspx.vb">
+      <DependentUpon>Wii.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\cldBD.vb" />
+    <Compile Include="Old_App_Code\clnCliente.vb" />
+    <Compile Include="Old_App_Code\clnEstoque.vb" />
+    <Compile Include="Old_App_Code\clnPedido.vb" />
+    <Compile Include="Old_App_Code\clnProduto.vb" />
+    <Compile Include="Cliente\CarrinhoCompra.aspx.designer.vb">
+      <DependentUpon>CarrinhoCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\CarrinhoCompra.aspx.vb">
+      <DependentUpon>CarrinhoCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cliente\ConfirmaCompra.aspx.designer.vb">
+      <DependentUpon>ConfirmaCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\ConfirmaCompra.aspx.vb">
+      <DependentUpon>ConfirmaCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cliente\PainelC.aspx.designer.vb">
+      <DependentUpon>PainelC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\PainelC.aspx.vb">
+      <DependentUpon>PainelC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Livre\Busca.aspx.designer.vb">
+      <DependentUpon>Busca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Livre\Busca.aspx.vb">
+      <DependentUpon>Busca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Livre\Detalhe.aspx.designer.vb">
+      <DependentUpon>Detalhe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Livre\Detalhe.aspx.vb">
+      <DependentUpon>Detalhe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Livre\index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Livre\index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Livre\login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Livre\login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Livre\Master.Master.designer.vb">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Livre\Master.Master.vb">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Livre\NovoUsuario.aspx.designer.vb">
+      <DependentUpon>NovoUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Livre\NovoUsuario.aspx.vb">
+      <DependentUpon>NovoUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Livre\PlayStation 3.aspx.designer.vb">
+      <DependentUpon>PlayStation 3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Livre\PlayStation 3.aspx.vb">
+      <DependentUpon>PlayStation 3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Livre\Xbox 360.aspx.designer.vb">
+      <DependentUpon>Xbox 360.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Livre\Xbox 360.aspx.vb">
+      <DependentUpon>Xbox 360.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Old_App_Code\BasePage.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\Protege.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Livre\Master.Master" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>22927</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

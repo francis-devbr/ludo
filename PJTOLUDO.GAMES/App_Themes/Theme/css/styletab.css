@@ -1,0 +1,46 @@
+.box
+{
+    background-color: #eee;
+    margin: 20px auto 0 auto;
+    padding: 5px;
+    border-radius: 3px;
+    width: 970px;
+}
+.box ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.box ul li
+{
+    margin: 0 5px 0 0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    background: #fff;
+    float: left;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.box ul li.active
+{
+    background-color: #505667;
+    color: #fff;
+}
+.box .conteudo
+{
+    margin: 5px 0 0;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.box .conteudo div
+{
+    display: none;
+}
+.box .conteudo div img
+{
+    display: block;
+    margin: 10px auto;
+}
